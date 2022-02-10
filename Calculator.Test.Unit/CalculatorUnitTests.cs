@@ -69,5 +69,14 @@ namespace Calculator.Test.Unit
         {
             Assert.That(_uut.Divide(a,b), Is.EqualTo(result));
         }
+
+        [TestCase(81, 9)]
+        [TestCase(9, 3)]
+        [TestCase(25, 5)]
+        [TestCase(0, 0)]
+        public void SquareRoot_SquareRootPosNumbers_ResultIsCorrect(double a, double result)
+        {
+            Assert.That(_uut.SquareRoot(a), Is.EqualTo(result));
+        }
     }
 }

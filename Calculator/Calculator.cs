@@ -48,5 +48,10 @@ namespace Calculator
             }
             return a / b;
         }
+
+        public double SquareRoot(double a)
+        {
+            return Math.Sqrt(a);
+        }
     }
 }
